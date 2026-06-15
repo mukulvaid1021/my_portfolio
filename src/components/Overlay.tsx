@@ -22,8 +22,8 @@ export default function Overlay({ scrollYProgress }: { scrollYProgress: MotionVa
         className="absolute w-full flex justify-center text-center px-4"
       >
         <h1 className="text-5xl md:text-7xl font-bold tracking-tighter text-white drop-shadow-xl">
-          Mukul Vaid.<br/>
-          <span className="text-neutral-400">Full Stack Developer.</span>
+          Mukul Vaid.<br />
+          <span className="text-neutral-400">Software Developer.</span>
         </h1>
       </motion.div>
 

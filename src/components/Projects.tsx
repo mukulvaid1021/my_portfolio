@@ -10,7 +10,8 @@ const projects = [
     category: "Gym Management System",
     description: "Full-stack platform with Admin/Member portals, JWT auth, RBAC, and AI chatbot. Deployed on Vercel & Render.",
     year: "2026",
-    tech: ["Flutter", "React.js", "Node.js", "MongoDB"]
+    tech: ["Flutter", "React.js", "Node.js", "MongoDB"],
+    link: "https://new-gym-frontend-web.vercel.app/"
   },
   {
     id: 2,
@@ -18,7 +19,8 @@ const projects = [
     category: "Full-Stack Marketplace",
     description: "Production-grade rental marketplace handling 1,000+ bookings with secure sessions and dynamic EJS UI.",
     year: "2025",
-    tech: ["Node.js", "Express.js", "MongoDB", "Passport.js"]
+    tech: ["Node.js", "Express.js", "MongoDB", "Passport.js"],
+    link: "https://github.com/mukulvaid1021/Airbnb.git"
   },
   {
     id: 3,
@@ -26,7 +28,8 @@ const projects = [
     category: "Mobile Application",
     description: "Cross-platform app featuring daily logging, streak tracking, happiness analytics, and secure Firebase auth.",
     year: "2025",
-    tech: ["Flutter", "Firebase", "MongoDB"]
+    tech: ["Flutter", "Firebase", "MongoDB"],
+    link: "https://github.com/mukulvaid1021/mood_seeker_app.git"
   }
 ];
 
@@ -72,13 +75,22 @@ export default function Projects() {
                 <p className="text-neutral-400 text-sm leading-relaxed mb-6 group-hover:text-neutral-300 transition-colors duration-500">
                   {project.description}
                 </p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mb-6">
                   {project.tech.map((t) => (
                     <span key={t} className="text-xs px-3 py-1 rounded-full bg-white/5 border border-white/10 text-neutral-300">
                       {t}
                     </span>
                   ))}
                 </div>
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-white border border-white/10 px-4 py-2 rounded-full hover:bg-white/10 transition-colors duration-300"
+                >
+                  View project
+                  <ArrowUpRight size={16} />
+                </a>
               </div>
             </motion.div>
           ))}

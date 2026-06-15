@@ -10,11 +10,11 @@ export default function Footer() {
         <div className="text-left">
           <h3 className="text-3xl font-bold text-white mb-2 tracking-tight">Mukul Vaid</h3>
           <p className="text-neutral-400 text-sm max-w-md mb-4">
-            B.Tech CSIT | Flutter & Full Stack Developer | AWS Certified Cloud Practitioner<br />
-            Open to SDE / Backend Roles
+            B.Tech CSIT | Software Developer | AWS Certified Cloud Practitioner<br />
+            Open to Software Engineering & Backend Development Roles
           </p>
           <div className="text-neutral-500 text-xs">
-            KIET Group of Institutions (2022-2026) • CGPA: 7.1
+            KIET Group of Institutions (2022–2026) • CGPA: 7.1
           </div>
         </div>
 
